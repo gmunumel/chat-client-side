@@ -1,0 +1,73 @@
+Protractor results for: 6/3/2017, 7:37:42 PM
+
+AppDir:./
+  Suite: About e2e Tests -- passed
+    passed - should display: About
+
+  Suite: Admin Chat Room Detail e2e Tests -- passed
+    passed - should display: Admin Chat Room Detail
+    passed - should display a save button
+    passed - should display a back button
+    passed - should navigate to chat rooms list
+    passed - should update a chat room
+
+  Suite: Admin Chat Room e2e Tests -- passed
+    passed - should display: Admin Chat Room
+    passed - should display an add button
+    passed - should navigate to add new chat room
+    passed - should navigate to edit a chat room
+    passed - should add a chat room
+    passed - should delete a chat room
+    passed - should shown an existing chat room
+    passed - should not shown a no existing chat room
+
+  Suite: Admin Message Detail e2e Tests -- passed
+    passed - should display: Admin Message Detail
+    passed - should display an update button
+    passed - should display a back button
+    passed - should display a delete button
+    passed - should navigate to message list
+    passed - should update a message
+    passed - should add a message
+    passed - should delete a message
+
+  Suite: Admin Message e2e Tests -- passed
+    passed - should display: Admin Message
+    passed - should display an add button
+    passed - should navigate to edit a message
+
+  Suite: Admin User Detail e2e Tests -- passed
+    passed - should display: Admin User Detail
+    passed - should display a save button
+    passed - should display a back button
+    passed - should navigate to users list
+    passed - should update an user
+
+  Suite: Admin User e2e Tests -- passed
+    passed - should display: Admin User
+    passed - should display an add button
+    passed - should navigate to add new user
+    passed - should navigate to edit an user
+    passed - should add an user
+    passed - should delete an user
+    passed - should shown an existing user
+    passed - should not shown a no existing user
+
+  Suite: Client Side Chat E2E Tests -- passed
+    passed - should have links
+    passed - can click Sign In link in template
+    passed - can click Sign Up link in template
+
+  Suite: Dashboard e2e Tests -- passed
+    passed - should display: Dashboard
+
+  Suite: Sign In e2e Tests -- passed
+    passed - should display: Sign In
+    passed - should not found an user
+    passed - should found an user
+
+  Suite: Sign Up e2e Tests -- passed
+    passed - should display: Sign Up
+    passed - should not create an user
+    passed - should add one user
+
