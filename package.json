@@ -65,5 +65,8 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~4.0.14",
     "rimraf": "^2.5.4"
+  },
+  "engines": {
+    "node": "7.8.0"
   }
 }
