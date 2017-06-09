@@ -1,5 +1,6 @@
-{
-  "port": 8080,
+//bs-config.js
+module.exports = {
+  "port": process.env.PORT || 8080,
   "server": {
     "baseDir": "src",
     "routes": {
