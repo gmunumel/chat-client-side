@@ -20,7 +20,7 @@ _Notice before run e2e tests or the app you must have rails api server running f
 
 ## License
 
-Licensed under [MIT](../LICENSE.md)
+Licensed under [MIT](LICENSE.md)
 
 Related information:
 * Angular2 information: https://angular.io/docs/ts/latest/tutorial/
