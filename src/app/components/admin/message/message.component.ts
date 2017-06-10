@@ -156,9 +156,12 @@ export class MessageComponent implements OnInit, AfterViewChecked, OnDestroy {
   private syncMessages(): void {
     this.ngZone.runOutsideAngular(() => {
       this.chatSubscription = this.socketService.receive()
-        .subscribe((message: Message) => {
+        .subscribe((message: any) => {
           // Come back into Angular zone when there is a callback from the Observable
           this.ngZone.run(() => {
+            if (!message.chat_room_id || !message.user_id) {
+              message = JSON.parse(message);
+            }
             if (message.chat_room_id === this.chatRoomId
                 && message.user_id != this.user.id) {
               let foundUser = this.users.find((user: User) => { return user.id === message.user_id; });
