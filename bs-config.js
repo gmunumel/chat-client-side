@@ -1,4 +1,8 @@
 //bs-config.js
+
+IS_PROD_MODE = process.env.PORT ? true : false;
+ENABLE_BROWSER_SYNC = !IS_PROD_MODE;
+
 module.exports = {
   "port": process.env.PORT || 8080,
   "server": {
@@ -7,5 +11,10 @@ module.exports = {
       "/node_modules": "node_modules"
     }
   },
-  "ghost": process.env.PORT ? true : false
+  "ghostMode": {
+    clicks: ENABLE_BROWSER_SYNC,
+    links: ENABLE_BROWSER_SYNC,
+    forms: ENABLE_BROWSER_SYNC,
+    scroll: ENABLE_BROWSER_SYNC
+  }
 }
