@@ -12,9 +12,9 @@ module.exports = {
     }
   },
   "ghostMode": {
-    clicks: ENABLE_BROWSER_SYNC,
-    links: ENABLE_BROWSER_SYNC,
-    forms: ENABLE_BROWSER_SYNC,
-    scroll: ENABLE_BROWSER_SYNC
+    "clicks": ENABLE_BROWSER_SYNC,
+    "links": ENABLE_BROWSER_SYNC,
+    "forms": ENABLE_BROWSER_SYNC,
+    "scroll": ENABLE_BROWSER_SYNC
   }
 }
