@@ -1,9 +1,10 @@
 //bs-config.js
 
 IS_PROD_MODE = process.env.PORT ? true : false;
-ENABLE_BROWSER_SYNC = !IS_PROD_MODE;
+IS_DEV_MODE  = !IS_PROD_MODE;
 
 module.exports = {
+  "open": IS_DEV_MODE,
   "port": process.env.PORT || 8080,
   "server": {
     "baseDir": "src",
@@ -11,10 +12,5 @@ module.exports = {
       "/node_modules": "node_modules"
     }
   },
-  "ghostMode": {
-    "clicks": ENABLE_BROWSER_SYNC,
-    "links": ENABLE_BROWSER_SYNC,
-    "forms": ENABLE_BROWSER_SYNC,
-    "scroll": ENABLE_BROWSER_SYNC
-  }
+  "ghostMode": IS_DEV_MODE
 }
