@@ -3,6 +3,7 @@
 This project provide the frontend functionality for the chat. It will send requests 
 to rails API and will display data in a browser.
 
+Part of https://github.com/gmunumel/chat-socketio-rails project
 
 ## Installation
 ```npm install```
